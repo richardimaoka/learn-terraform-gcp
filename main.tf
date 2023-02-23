@@ -8,11 +8,11 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("<NAME>.json")
+  credentials = file("richard-experiment-service-account-key.json")
 
-  project = "<PROJECT_ID>"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  project = "richard-experiment"
+  region  = "asia-northeast1"
+  zone    = "asia-northeast1-a"
 }
 
 resource "google_compute_network" "vpc_network" {
